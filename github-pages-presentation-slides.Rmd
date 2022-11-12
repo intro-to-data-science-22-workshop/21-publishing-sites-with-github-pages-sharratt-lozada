@@ -82,6 +82,11 @@ GitHub Pages are public webpages hosted and published through GitHub. The quicke
 
 <br>
 
+<div align="right">
+<br>
+<img src=./images/pages-logo.jpeg height=500>
+</div>
+
 ```{r, out.height=200 , out.width=400 }
 #knitr::include_graphics("./Images/API_gif.gif") COULD PUT IN A GIF HERE...
 
@@ -97,9 +102,11 @@ name: What can do GitHub Pages do?
 
 
 
+I'll assume that you're familiar with Git and GitHub 
+
 ---
 
-name: Quickstart with GitHub Pages?
+name: Quickstart with GitHub Pages
 
 #How can you create a Page?
 .pull-left[
@@ -112,3 +119,26 @@ name: Quickstart with GitHub Pages?
 
 ]
 
+---
+
+name: What's Jekyll and how do you use it?
+
+#What's Jekyll and how do you use it?
+
+
+
+---
+name: filler
+
+#Filler
+
+
+
+---
+name: Filler
+
+#Filler
+
+
+
+---
