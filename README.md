@@ -11,18 +11,18 @@ This session will introduce you to publishing static websites with Github Pages.
 
 ### Main learning objectives
 
-The goals of this session are to (1) introduce you to GitHub Pages, (2) demonstate how it works, and (3) provide you with practice material as well as some further readings.
-
+The goals of this session are to (1) introduce you to GitHub Pages, (2) demonstate how to set it up, and (3) provide you with practice material as well as some further readings.
 
 ## Instructors
 
-- Paul Sharratt 
-- Fernando Corral Lozada
+- Paul Sharratt ([GitHub](https://github.com/psharratt))
+- Fernando Corral Lozada ([GitHub](https://github.com/FernandoCL1991))) 
 
 ## Further resources
 
-- will be added
-
+- [GitHub Pages - home](https://pages.github.com)
+- [GitHub Pages - documentation](https://docs.github.com/en/pages)
+- [Setting Up a GitHub Pages webpage with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll)
 
 ## License
 
@@ -30,7 +30,9 @@ The material in this repository is made available under the [MIT license](http:/
 
 ## Statement of contributions
 
-**Paul Sharratt** prepared the presentation slides and recording.
+**Paul Sharratt** prepared the presentation slides using the xaringan package and recorded and edited the video.
 
 **Fernando Corral Lozada** prepared the practice material.
+
+
 
