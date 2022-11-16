@@ -54,7 +54,7 @@ library(httr)
 
 ##3. [How do you setup GitHub Pages?](#howdoyouuse)##
 
-##4. [What's Jekyll and why would you use it?](#whatsjekyll)##
+##4. [What's Jekyll and how do you use it?](#whatsjekyll)##
 
 ##5. [Summary](#summary)##
 
@@ -119,7 +119,7 @@ name: whywouldyouuse
 
 - **Customisible Subdomain** - If you want a more professional and accessible domain, you can create your own domain by adding a CNAME file to the repo or by changing the project's settings.
 
-
+- **Showcase Your Code** - COME BACK TO THIS - ADD EXAMPLES  - YOU 
 
 
 .footnote[<sup>1</sup> There are [fair usage policies](https://help.github.com/articles/github-terms-of-service/), but it's highly unlikely you'll hit the limits.]
@@ -130,12 +130,11 @@ name: whywouldyouuse
 
 .pull-right[
 
-- **Showcase Your Code!** 
-
 - **Open-source** - Unless you change the settings to go private, your repo is open source, making it easier to showcase your code.
 
 - **Real-time Updates** - When you commit an update, GitHub automatically pushes the update out live.
 
+- **Design themes** - You can use HTML and CSS to change the content and design of your page. Alternatively, you can use a static site generator [Jekyll](https://jekyllrb.com) for pre-set HTML/CSS themes.<sup>2</sup>
 
 .footnote[<sup>2</sup> more about HTML/CSS in the practice session]
 ]
@@ -152,10 +151,10 @@ What you need to have before setting up GitHub Pages:
 
   - **GitHub Account**
 
-  - **GitHub Desktop**
+  - **GitHub Dekstop**
 
   - **Code** - Ideally, some code you want to showcase using a static webpage.
-
+https://evanwill.github.io/go-go-ghpages-b/content/1-intro.html
 ]
 
 --
@@ -166,6 +165,7 @@ Before we get started, let’s clarify some common terms::
 
 - **CSS** - Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML.
 
+- **Design themes** - You can use HTML and CSS to change the content and design of your page. Alternatively, you can use a static site generator [Jekyll](https://jekyllrb.com) 
 ]
 
 
@@ -178,7 +178,7 @@ Before we get started, let’s clarify some common terms::
 
  - **GitHub Pages are static** - Pages does not support server-side scripting such as, **PHP, Ruby, or Python**. 
  
- - **Beyond the basics, making good-looking Pages can be tricky** - You’ll need to know the basics of Git and Jekyll.
+ - **Beyond the basics, making good-looking Pages can be tricky** - You’ll need to know the basics of Git and Jekyll. Jekyll is the middleware, written in Ruby, that takes all your files and transforms them into a pretty website using the Liquid templating language. Finally, you’ll use Markdown markup syntax for formatting content like your blog posts.
  
 - There are two ways to design your webpages:
   1. Using **Jekyll** 
@@ -420,10 +420,6 @@ name:linksandresources
 
 #Further Links and Resources 
 
----
-
-#Further Links and Resources 
-
 Want to learn more about GitHub Pages? Check out these resources:
 
 ### [GitHub Pages Homepage](https://pages.github.com) (Not static!)
@@ -436,10 +432,6 @@ Want to learn more about GitHub Pages? Check out these resources:
 
 ---
 
-# <center>Thanks for listening!
-
-
----
 # <center>Thanks for listening!
 
 <br>

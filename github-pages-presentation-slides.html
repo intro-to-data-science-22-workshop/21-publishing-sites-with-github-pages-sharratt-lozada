@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Publishing Sites with GitHub Pages</title>
+    <title>Publishing Websites with GitHub Pages</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Paul Sharratt" />
-    <meta name="date" content="2022-12-11" />
+    <meta name="author" content="Paul Sharratt &amp; Fernando Corral Lozada" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/metropolis.css" rel="stylesheet" />
@@ -15,19 +14,20 @@
 class: center, middle, inverse, title-slide
 
 .title[
-# Publishing Sites with GitHub Pages
+# Publishing Websites with GitHub Pages
 ]
 .author[
-### Paul Sharratt
+### Paul Sharratt &amp; Fernando Corral Lozada
 ]
 .institute[
 ### Hertie School
 ]
 .date[
-### 12/11/22
+### 21/11/22
 ]
 
 ---
+
 
 
 
@@ -42,7 +42,7 @@ class: center, middle, inverse, title-slide
 
 ##3. [How do you setup GitHub Pages?](#howdoyouuse)##
 
-##4. [What's Jekyll and how do you use it?](#whatsjekyll)##
+##4. [What's Jekyll and why would you use it?](#whatsjekyll)##
 
 ##5. [Summary](#summary)##
 
@@ -56,16 +56,21 @@ class: center, middle, inverse, title-slide
 name:whatispages
 
 #What is GitHub Pages?
+
+---
+
+#What is GitHub Pages?
 .pull-left[
+
 
 ### It's pretty straightforward...
 
-- GitHub Pages is GitHub's webpages hosting service. With Github Pages, you can quickly and easily create public webpages from repos hosted and published through GitHub.
+- GitHub Pages is GitHub's webpages hosting service. With Pages, you can quickly and easily create public webpages from repos hosted and published through GitHub.
  
 - All you need to do is upload your files to a repository, head into Settings to turn on GitHub Pages and its live and hosting your content. 
 &lt;br&gt;
 
-- GitHub Pages are public webpages hosted and published through GitHub. The quickest way to get up and running is by using the Jekyll Theme Chooser to load a pre-made theme. You can then modify your GitHub Pages' content and style, but more about that later...
+- The quickest way to get up and running is by using a pre-set theme provided by Jekyll. You can then modify your GitHub Pages' content and style, but more about that later...
 
 ]
 
@@ -93,8 +98,12 @@ name: whywouldyouuse
 .pull-left[
 
 - **Free** - You can host your pages for free and there are no hidden costs.
-- **Subdomain** - You get a subdomain (username.github.io) which is provided over HTTPS.&lt;sup&gt;1&lt;/sup&gt;
+
+- **Secure Subdomain** - You get a subdomain (username.github.io) which is provided over HTTPS.&lt;sup&gt;1&lt;/sup&gt;
+
 - **Customisible Subdomain** - If you want a more professional and accessible domain, you can create your own domain by adding a CNAME file to the repo or by changing the project's settings.
+
+
 
 
 .footnote[&lt;sup&gt;1&lt;/sup&gt; There are [fair usage policies](https://help.github.com/articles/github-terms-of-service/), but it's highly unlikely you'll hit the limits.]
@@ -105,12 +114,44 @@ name: whywouldyouuse
 
 .pull-right[
 
-- **Open-source** - Unless you change the settings to go private, your repo is open source, making it easier to showcase your code.
-- **Real-time Updates** - When you commit an update, GitHub automatically pushes the update out live.
-- **Design themes with Jekyll** -You can use Jekyll on your webpage, which means that you can use simple HTML/CSS themes.&lt;sup&gt;2&lt;/sup&gt;
+- **Showcase Your Code!** 
 
-.footnote[&lt;sup&gt;2&lt;/sup&gt; more about Jekyll in the practice session]
+- **Open-source** - Unless you change the settings to go private, your repo is open source, making it easier to showcase your code.
+
+- **Real-time Updates** - When you commit an update, GitHub automatically pushes the update out live.
+
+
+.footnote[&lt;sup&gt;2&lt;/sup&gt; more about HTML/CSS in the practice session]
 ]
+
+
+---
+
+#Prerequisites...
+
+.pull-left[
+What you need to have before setting up GitHub Pages:
+
+  - **Git** 
+
+  - **GitHub Account**
+
+  - **GitHub Desktop**
+
+  - **Code** - Ideally, some code you want to showcase using a static webpage.
+
+]
+
+--
+
+.pull-right[
+Before we get started, let’s clarify some common terms::
+- **HTML** - The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.
+
+- **CSS** - Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML.
+
+]
+
 
 
 ---
@@ -119,14 +160,17 @@ name: whywouldyouuse
 
 ##**Warning!**
 
- - **GitHub Pages are static** and do not support server-side scripting such as, **PHP, Ruby, or Python**.
-
- - Redirecting URLs is awkward with GitHub Pages.This is important especially when you have an old website that you want to migrate to Hugo; some links may be broken, in which case you can easily redirect them with Netlify.
-
-- One of the best features of Netlify that is not available with GitHub Pages is that Netlify can generate a unique website for preview when a GitHub pull request is submitted to your GitHub repository. This is extremely useful when someone else (or even yourself) proposes changes to your website, since you have a chance to see what the website would look like before you merge the pull request.
+ - **GitHub Pages are static** - Pages does not support server-side scripting such as, **PHP, Ruby, or Python**. 
+ 
+ - **Beyond the basics, making good-looking Pages can be tricky** - You’ll need to know the basics of Git and Jekyll.
+ 
+- There are two ways to design your webpages:
+  1. Using **Jekyll** 
+  2. Using **HTML &amp; CSS**
+  
+- The workshop will cover how to use **HTML &amp; CSS** files with GitHub Pages.
 
 ---
-
 # How do you setup GitHub Pages?
 
 .pull-left[
@@ -135,7 +179,7 @@ The setup for GitHub Pages is straightforward and we'll cover it in a few simple
 
 **Step 1** - Create a Repo
 
-**Step 2** - Go to `Pages` in the Pepo
+**Step 2** - Go to `Pages` in the Repo
 
 **Step 3** - Visit your Page
 
@@ -152,7 +196,7 @@ The setup for GitHub Pages is straightforward and we'll cover it in a few simple
 &lt;img src="images/gifs/brent.gif" width=800&gt;
 &lt;/div&gt;
 &lt;div align="center"&gt;
-&lt;em&gt;You after setting up GitHub Pages for the first time...&lt;em&gt;
+&lt;em&gt;You, after setting up GitHub Pages for the first time...&lt;em&gt;
 &lt;/div&gt;
 ]
 
@@ -165,17 +209,22 @@ The setup for GitHub Pages is straightforward and we'll cover it in a few simple
 
 **Step 1 - Create a Repo**
 - In the upper-right corner of any page, use the  drop-down menu, and select **New repository**.
+
 - Alternatively, click on the big green **New** button.
+
 - Give your repo a name. Your repo's name will form part of your webpage's `URL`
+
 - Add a `README.md` file.
+
 - Click **Create Repository**
-- If you already have a repo that you want to create a page for, skip this step.
+
+- *If you already have a repo that you want to create a page for, skip this step.*
 ]
 
 .pull-right[
 
 &lt;div align="center"&gt;
-&lt;img src="images/gifs/step-1-create-repo.gif" width=800&gt;
+&lt;img src="images/gifs/step-1-create-repo.gif" width=1000&gt;
 &lt;/div&gt;
 
 ]
@@ -187,12 +236,17 @@ The setup for GitHub Pages is straightforward and we'll cover it in a few simple
 
 **Step 2 - Go to Pages in the repo**
 - Under your repository name, click `Settings`
+
 - In the `Code and automation` section of the sidebar, click  **Pages**.
+
 - Under `Build and deployment`, under `Source`, select **Deploy from a branch**.
-- Under `Build and deployment`, under `Branch`, use **None** or Branch drop-down menu and select a publishing source.
-- In this case, we're using `Main`, but it can be any branch.
-- Then click **Save**.
-- **Congratulations** - you've created a Page.
+
+- Under `Build and deployment`, under `Branch`, use **None** or Branch drop-down menu and select a publishing
+source. 
+
+- Then click **Save** 
+
+- **Congratulations - you've created a Page.**
 
 ]
 
@@ -210,9 +264,12 @@ The setup for GitHub Pages is straightforward and we'll cover it in a few simple
 
 **Step 3 - Vist your Page**
 - After a moment, your page will be generated and the URL will show up on the `Pages` section.
+
 - The domain name will be `username.github.io`
+
 - Your webpage will have no content, except for the repo name.
-- There are a few ways to add content..
+
+- There are a few ways to add content...
 ]
 
 .pull-right[
@@ -228,13 +285,17 @@ The setup for GitHub Pages is straightforward and we'll cover it in a few simple
 .pull-left[
 
 **Step 4 - Edit Your `README` File**
-- The simplest way to add content to your page is to edit your `README.md` file
-- Go to the file in your repo
-- Click **Edit** 
-- Make the changes in the file.
-- Commit the changes 
-- After ten minutes, they will be displayed on your webpage.
+- The most basic way to add content to your page is to edit your `README.md` file
 
+- Go to the file in your repo
+
+- Click **Edit** 
+
+- Make the changes in the file.
+
+- Commit the changes 
+
+- After about ten minutes, they will be displayed on your webpage.
 ]
 
 .pull-right[
@@ -253,7 +314,9 @@ The setup for GitHub Pages is straightforward and we'll cover it in a few simple
 
 **Step 5 - Clone Your Repo to Add `HTML` &amp; `CSS` files**
 - For more advanced changes, it's best to clone your repo and make changes locally.
-- GitHub Pages will automatically incorporate your HTML and CSS files into your webpage.
+
+- **Important:** GitHub Pages will automatically incorporate your HTML and CSS files into your webpage.
+
 - Any changes made in the files in your repo will be automatically updated after you commit.
 
 ]
@@ -271,8 +334,12 @@ name:whatsjekyll
 
 #What's Jekyll and how do you use it?
 
+---
+
+#What's Jekyll and how do you use it?
+
 .pull-left[
-- Jekyll is a static site generator written in Ruby by Tom Preston-Werner. It is distributed under the open source MIT license.
+- [**Jekyll**](https://jekyllrb.com) is a static site generator written in Ruby by Tom Preston-Werner. It is distributed under the open source MIT license.
 
 - Jekyll started a web development trend towards static websites. As of 2017 Jekyll was ranked the most popular static site generator, largely due to its adoption by GitHub. 
 
@@ -290,8 +357,6 @@ name:whatsjekyll
 ]
 
 ---
-
-name:whatsjekyll
 
 #What's Jekyll and how do you use it? 
 
@@ -317,11 +382,17 @@ name: summary
 
 #Summary
 
+---
+
+#Summary
+
 * GitHub Pages is a free hosting service for GitHib repositories.
 
 * Setting up a GitHub Page is super quick and can be done in few simple steps.
 
 * Any changes you make in the repo will be published on the webpage.
+
+* It's best practice to clone your repo, make changes locally, and then push the changes using Git or GitHub Desktop
 
 * **Warning:** The webpages are static.
 
@@ -333,6 +404,10 @@ name:linksandresources
 
 #Further Links and Resources 
 
+---
+
+#Further Links and Resources 
+
 Want to learn more about GitHub Pages? Check out these resources:
 
 ### [GitHub Pages Homepage](https://pages.github.com) (Not static!)
@@ -341,10 +416,14 @@ Want to learn more about GitHub Pages? Check out these resources:
 
 ###[GitHub Pages and Jekyll - Documentation](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll)
 
-### [Workshop Repo](https://github.com/intro-to-data-science-22-workshop/21-publishing-sites-with-github-pages-sharratt-lozada)
+### [Workshop Repo](https://github.com/intro-to-data-science-22-workshop/21-publishing-sites-with-github-pages-sharratt-lozada/tree/main/Workshop)
 
 ---
 
+# &lt;center&gt;Thanks for listening!
+
+
+---
 # &lt;center&gt;Thanks for listening!
 
 &lt;br&gt;
